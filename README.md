@@ -4,3 +4,4 @@
 2. [Movie Fight](https://coolsonu39.github.io/modern-js-bootcamp/2%20movie-fight/index.html)
 3. [Maze Game](https://coolsonu39.github.io/modern-js-bootcamp/3%20maze/)
 4. [Secret Message service](https://coolsonu39.github.io/modern-js-bootcamp/4%20message/)
+5. [Scrimba Food API Challenge](https://coolsonu39.github.io/modern-js-bootcamp/webdevfoodish/)

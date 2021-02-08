@@ -1,0 +1,128 @@
+body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* grid-template-rows: 50% 50%; */
+    background: #ffeca4;
+    height: 100vh;
+    margin: 0px;
+}
+
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid; */
+}
+
+#image1, #image2 {
+    position:relative;
+}
+
+img {
+    position:absolute;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    overflow: hidden;
+    /* left:0; */
+    /* transition: opacity 1s ease-in-out; */
+}
+
+img {
+    border: 1px solid rgb(33, 33, 33);
+}
+
+p {
+    background-color: rgb(33, 33, 33);
+    color: white;
+    font-size: 32px;
+    padding: 6px;
+    font-family: 'Zilla Slab', serif;
+    margin: 6px;
+    transition: all 0.2s;
+}
+
+p:hover {
+    transform: scale(1.1);
+}
+
+button {
+    border: 0px solid;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    font-size: 32px;
+    padding: 6px;
+    font-family: 'Zilla Slab', serif;
+    margin: 6px;
+    transition: all 0.2s;
+    width: 7em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-indent: 5;
+    box-shadow: 10px 10px 10px grey;
+}
+
+button > p {
+    margin: 0px;
+    padding: 0px;
+}
+
+button:active {
+    box-shadow: 5px 5px 5px grey;
+}
+
+p {
+    margin: 1px;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black; /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.endscreen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.endscreen > button {
+    background-color: white;
+    color: rgb(33, 33, 33);
+    font-size: 50px;
+}
+
+.endscreen > p {
+    background-color: white;
+    color: rgb(33, 33, 33);
+    font-size: 50px;
+}
+
+@media (max-width: 600px) {
+    body {
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 30% 30% 20%;
+    }
+  }
